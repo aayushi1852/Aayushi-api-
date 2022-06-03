@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img class="header-img img-back" src="images/home.png" alt="No Image Available">
+
+    <h1>Contact Form</h1>
+
+
+    <form id = "ContactForm" action="https://reqbin.com/echo/post/json" method="post">
+        <div>
+            <input type="text" required id="username" name="name" placeholder="Your Name" autocomplete = "off">
+            <input type="text" required id="usermsg" name="Message" placeholder="Message" autocomplete = "off">
+            <button class="disabled" type="submit">Submit</button>
+        </div>
+     </form>
+     <script>document.querySelector(".img-back").addEventListener("click", () => {
+        window.location.replace("index.html")
+      })
+
+      </script>
+
+
+</body>
+</html>
